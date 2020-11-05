@@ -1,16 +1,11 @@
-import React, { useEffect, useReducer, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
+import { useUpdateEffect } from 'react-use';
+import BooksContext from '../context/BooksContext';
 import { searchBooks } from '../service/api';
-import { reducer, initialState } from '../reducer';
 
 const ListBooks = () => {
+  const { state, dispatch } = useContext(BooksContext);
   const [loading, setLoading] = useState(true);
-  // const [total, setTotal] = useState(true);
-  // const [data, setData] = useState([]);
-  // const [loadMore, setLoadMore] = useState([]);
-  // const [startIndex, setStartIndex] = useState(0);
-  // const [searchTerm, setSearchTerm] = useState('');
-
-  const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
     (async () => {
@@ -27,7 +22,7 @@ const ListBooks = () => {
 
   const isInitialMount = useRef(false);
 
-  useEffect(() => {
+  useUpdateEffect(() => {
     if (!isInitialMount.current) {
       isInitialMount.current = true;
     } else {

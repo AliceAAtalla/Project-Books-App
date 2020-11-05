@@ -3,7 +3,7 @@ export const initialState = {
   totalItems: 0,
   startIndex: 0,
   searchTerm: 'alice',
-  // fetchingSearch: false,
+  fetchingSearch: false,
 };
 
 export const reducer = (state, action) => {
@@ -19,7 +19,7 @@ export const reducer = (state, action) => {
         ...state,
         searchTerm: action.searchTerm,
         startIndex: action.startIndex,
-        // fetchingSearch: action.fetchingSearch,
+        fetchingSearch: action.fetchingSearch,
       };
     case 'FETCHING_SEARCH':
       return {
