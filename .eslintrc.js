@@ -1,0 +1,32 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  extends: ['plugin:react/recommended', 'airbnb', 'prettier', 'prettier/react'],
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaFeatures: { jsx: true },
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  plugins: ['prettier', 'react', 'react-hooks'],
+  rules: {
+    'prettier/prettier': 'error',
+    'import/prefer-default-export': 0,
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'object-curly-newline': ['error', { multiline: true }],
+    'no-underscore-dangle': 'off',
+    'no-console': 'off',
+    'no-alert': 'off',
+    'prefer-arrow-callback': 'off',
+    'func-names': 'off',
+    'react/jsx-fragments': ['off'],
+    'react/jsx-filename-extension': 0,
+    'react/prefer-stateless-function': 0,
+    'arrow-parens': [2, 'always'],
+    'jsx-a11y/label-has-associated-control': 0,
+    'react/jsx-one-expression-per-line': 0,
+  },
+};
