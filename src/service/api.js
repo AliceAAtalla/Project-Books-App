@@ -6,7 +6,7 @@ const AUTH_KEY = () => {
 };
 const api = axios.create({ baseURL: 'https://www.googleapis.com/books/v1/' });
 
-export const searchBooks = async (searchText = 'alice', startIndex = 0) => {
+export const searchBooks = async (startIndex, searchText) => {
   const URL = `/volumes?q=${searchText}&maxResults=20&startIndex=${startIndex}&key=${AUTH_KEY()}`;
 
   try {
