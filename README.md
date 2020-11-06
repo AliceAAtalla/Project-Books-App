@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Project Books App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project of a books web application.
 
-## Available Scripts
+![image](./src/assets/image/Design.jpg)
 
-In the project directory, you can run:
+#### 🚀 Technologies, libs and frameworks:
 
-### `npm start`
+* [Javascript](https://www.javascript.com/) \- Programming language;
+* [ReactJS](https://reactjs.org/) \- The web framework used;
+* [React Router Dom](https://reactrouter.com/web/guides/) \- Router libraries for React;
+* [React Hooks](https://reactjs.org/docs/hooks-intro.html) \- Use state and other React features without writing a class;
+* [CSS Pure](https://developer.mozilla.org/en-US/docs/Web/CSS) \- Cascading Style Sheets \(CSS\) is a style sheet language;
+* [Axios](https://github.com/axios/axios) \- Promise based HTTP client for the browser and node\.js;
+* [react-stars](https://www.npmjs.com/package/react-stars) \- A simple star rating component for your React projects;;
+* [ESLint](https://eslint.org/) \- Find and fix problems in your JavaScript code;
+* [Google Books API](https://developers.google.com/books/docs/v1/using) \- An open\, crowd\-sourced database of Recipes from around the world\.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- - -
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Status of the Project: Finish :star2:
 
-### `npm test`
+- - -
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 🛠️ Deployment
 
-### `npm run build`
+https://fotonteste.herokuapp.com/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- - -
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 🔧 How to run the application?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+At the terminal, clone the project:
 
-### `npm run eject`
+```
+git clone git@github.com:AliceAAtalla/foton-teste.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Enter the project folder:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+cd foton-teste
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Install the dependencies:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+npm install
+```
 
-## Learn More
+Run the application:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+There, you can now access the application from the route http://localhost:3000/
 
-### Code Splitting
+## ✒️ Developers:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### [<img src="https://avatars1.githubusercontent.com/u/62206355?s=460&amp;u=e29f8bf10bba8281c77e2d88df973eb25b55d76c&amp;v=4" width="130" height="130">
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<sub>By: Alice Atalla</sub>](https://github.com/AliceAAtalla)
