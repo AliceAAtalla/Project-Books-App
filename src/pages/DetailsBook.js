@@ -37,27 +37,31 @@ const DetailsBook = () => {
 
   if (loading) return <p>Loading...</p>;
   return (
-    <div>
-      <section>
-        <div>
+    <section className="container-detail">
+      <div className="container-main">
+        <div className="content-main">
           <img src={data.volumeInfo.imageLinks.thumbnail} alt={data.volumeInfo.title} />
+          <span>{data.volumeInfo.pageCount} pages</span>
+        </div>
+        <div className="content-second">
           <h3>{data.volumeInfo.title}</h3>
           <span>by {data.volumeInfo.authors[0]}</span>
-          <ReactStars count={5} onChange={ratingChanged} size={24} color2="#ffd700" />
-          <span>{`Rating: ${rating}`}</span>
+          <ReactStars count={5} onChange={ratingChanged} size={32} color2="#ffd700" />
+          <span className="rating">{`Rating: ${rating}`}</span>
+          <div className="content-btns">
+            <button className="btn-buy" type="button">
+              BUY
+            </button>
+            <button className="btn-icons" type="button" onClick={handleFavorite}>
+              <img src={isFavorite ? favoritedIcon : notFavoritedIcon} alt="Heart Icon" />
+            </button>
+          </div>
         </div>
-        <div>
-          <span>{data.volumeInfo.pageCount} pages</span>
-          <button type="button">BUY</button>
-          <button type="button" onClick={handleFavorite}>
-            <img src={isFavorite ? favoritedIcon : notFavoritedIcon} alt="Heart Icon" />
-          </button>
-        </div>
-        <article>
-          <p>{data.volumeInfo.description}</p>
-        </article>
-      </section>
-    </div>
+      </div>
+      <article className="resume-article">
+        <p>{data.volumeInfo.description}</p>
+      </article>
+    </section>
   );
 };
 

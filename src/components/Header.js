@@ -3,9 +3,9 @@ import SearchBar from './SearchBar';
 
 const Header = () => {
   return (
-    <nav>
+    <header className="header">
       <SearchBar />
-    </nav>
+    </header>
   );
 };
 

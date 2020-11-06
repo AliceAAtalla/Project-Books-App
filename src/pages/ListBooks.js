@@ -61,17 +61,19 @@ const ListBooks = () => {
 
   if (loading) return <p>Loading...</p>;
   return (
-    <div>
+    <div className="container-books">
       {state.data.map((book) =>
         book.volumeInfo.imageLinks ? (
-          <Link to={`/book/${book.id}`}>
+          <Link className="book" to={`/book/${book.id}`}>
             <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.volumeInfo.title} />
           </Link>
         ) : null
       )}
-      <button type="button" onClick={handleLoadMore}>
-        Load More
-      </button>
+      <div className="container">
+        <button className="btn-load" type="button" onClick={handleLoadMore}>
+          Load More
+        </button>
+      </div>
     </div>
   );
 };

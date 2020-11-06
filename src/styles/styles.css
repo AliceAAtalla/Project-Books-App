@@ -1,0 +1,108 @@
+.header {
+  margin: 10rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100rem;
+  margin: 10rem;
+}
+
+.container-books {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.book {
+  margin: 7rem;
+}
+
+.input-search {
+  width: 200rem;
+  padding: 5rem;
+}
+
+.btn-icons {
+  background: transparent;
+  border: none;
+}
+
+.search-icon {
+  width: 25rem;
+  margin: 5rem;
+}
+
+.btn-load {
+  font-weight: 600;
+  border-radius: 12rem;
+  border-color: white;
+  color: rgb(17, 15, 15);
+  font-size: 16rem;
+  width: 150rem;
+  padding: 10rem;
+  background-color: #549ae6;
+}
+
+.btn-buy {
+  font-weight: 600;
+  border-radius: 12rem;
+  border-color: white;
+  color: white;
+  font-size: 16rem;
+  padding: 5rem 25rem;
+  background-color: #549ae6;
+}
+
+.container-detail {
+  text-align: justify;
+  font-size: 16rem;
+}
+
+.content-main img {
+  padding-bottom: 15rem;
+}
+
+.container-main {
+  margin: 20rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container-main h3 {
+  font-size: 20rem;
+  font-weight: 500;
+  padding-bottom: 5rem;
+}
+
+.rating {
+  align-self: center;
+}
+
+.content-main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-second {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 20rem;
+}
+
+.content-btns {
+  display: flex;
+  padding: 20rem 0;
+}
+
+.resume-article {
+  background-color: white;
+  font-size: 18rem;
+  padding: 20rem;
+}

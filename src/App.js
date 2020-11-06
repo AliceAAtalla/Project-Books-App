@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import * as Page from './pages';
-import './App.css';
 import Header from './components/SearchBar';
 
 function App() {

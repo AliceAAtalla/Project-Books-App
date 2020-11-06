@@ -17,14 +17,20 @@ const Header = () => {
   };
 
   return (
-    <header>
-      <input type="text" id="searchText" onChange={handleSearchInput} />
+    <div className="container">
+      <input className="input-search" type="text" id="searchText" onChange={handleSearchInput} />
       <div>
-        <button type="button" onClick={handleSearchButtom}>
-          <Link to={`/${state.searchTerm}`}>Search</Link>
+        <button className="btn-icons" type="button" onClick={handleSearchButtom}>
+          <Link to={`/${state.searchTerm}`}>
+            <img
+              className="search-icon"
+              src="https://img.icons8.com/android/24/000000/search.png"
+              alt="search"
+            />
+          </Link>
         </button>
       </div>
-    </header>
+    </div>
   );
 };
 
