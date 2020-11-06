@@ -18,4 +18,16 @@ export const searchBooks = async (startIndex, searchText) => {
   }
 };
 
+export const getByIdBook = async (idBook) => {
+  const URL = `/volumes/${idBook}?key=${AUTH_KEY()}`;
+
+  try {
+    const { data } = await api.get(URL);
+
+    return data;
+  } catch (err) {
+    return console.error(err);
+  }
+};
+
 export default api;

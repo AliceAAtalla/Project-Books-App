@@ -10,8 +10,8 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={Page.ListBooks} />
-        <Route path="/:searchParams" component={Page.ListBooks} />
         <Route path="/book/:bookId" component={Page.DetailsBook} />
+        <Route path="/:searchParams" component={Page.ListBooks} />
         <Route path="*" component={Page.NotFound} />
       </Switch>
     </BrowserRouter>

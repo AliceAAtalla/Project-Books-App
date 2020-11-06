@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useUpdateEffect } from 'react-use';
 import BooksContext from '../context/BooksContext';
 import { searchBooks } from '../service/api';
@@ -58,14 +59,14 @@ const ListBooks = () => {
     return dispatch({ type: 'START_INDEX' });
   };
 
-  // const books = state.searchTerm === '' ? state.loadMore : state.data;
-
   if (loading) return <p>Loading...</p>;
   return (
     <div>
       {state.data.map((book) =>
         book.volumeInfo.imageLinks ? (
-          <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.volumeInfo.title} />
+          <Link to={`/book/${book.id}`}>
+            <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.volumeInfo.title} />
+          </Link>
         ) : null
       )}
       <button type="button" onClick={handleLoadMore}>
