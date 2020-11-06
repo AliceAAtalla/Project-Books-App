@@ -13,6 +13,7 @@ const Header = () => {
 
   const handleSearchButtom = (event) => {
     event.preventDefault();
+    console.log(state);
     dispatch({ type: 'SEARCH_TERM', searchTerm: term, startIndex: 0, fetchingSearch: true });
   };
 
@@ -21,7 +22,7 @@ const Header = () => {
       <input className="input-search" type="text" id="searchText" onChange={handleSearchInput} />
       <div>
         <button className="btn-icons" type="button" onClick={handleSearchButtom}>
-          <Link to={`/${state.searchTerm}`}>
+          <Link to={`/${term}`}>
             <img
               className="search-icon"
               src="https://img.icons8.com/android/24/000000/search.png"
