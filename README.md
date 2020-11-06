@@ -55,9 +55,3 @@ npm start
 ```
 
 There, you can now access the application from the route http://localhost:3000/
-
-## ✒️ Developers:
-
-### [<img src="https://avatars1.githubusercontent.com/u/62206355?s=460&amp;u=e29f8bf10bba8281c77e2d88df973eb25b55d76c&amp;v=4" width="130" height="130">
-
-<sub>By: Alice Atalla</sub>](https://github.com/AliceAAtalla)
