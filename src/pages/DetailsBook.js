@@ -45,7 +45,9 @@ const DetailsBook = () => {
         </div>
         <div className="content-second">
           <h3>{data.volumeInfo.title}</h3>
-          <span>by {data.volumeInfo.authors[0]}</span>
+          <span>
+            by {data.volumeInfo.authors ? data.volumeInfo.authors[0] : data.volumeInfo.publisher}
+          </span>
           <ReactStars count={5} onChange={ratingChanged} size={32} color2="#ffd700" />
           <span className="rating">{`Rating: ${rating}`}</span>
           <div className="content-btns">
