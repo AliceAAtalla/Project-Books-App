@@ -1,9 +1,7 @@
 import axios from 'axios';
 
-const AUTH_KEY = () => {
-  const auth = process.env.NODE_ENV === 'development' ? process.env.REACT_APP_API_KEY : null;
-  return auth;
-};
+const AUTH_KEY = process.env.REACT_APP_API_KEY;
+
 const api = axios.create({ baseURL: 'https://www.googleapis.com/books/v1/' });
 
 export const searchBooks = async (startIndex, searchText) => {
